@@ -2,6 +2,10 @@
 const { workflow } = require("zenaton");
 
 module.exports = workflow("RankTrackerWorkflow", function*() {
-  yield this.run.task("TaskA");
-  yield this.run.task("TaskB");
+
+
+const scrapingninja = this.connector("scrapingninja", "CONNECTOR_ID");
+
+yield scrapingninja.get("/v1/store/google", { query: { search: "ma_query", country_code: "fr"} });
+yield this.run.task("TaskB");
 });
