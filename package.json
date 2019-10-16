@@ -1,0 +1,16 @@
+{
+  "name": "slack_scrapingbee_workflow",
+  "version": "1.0.0",
+  "description": "An example workflow using Zenaton with Slack and ScrapingBee API connectors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Sahin",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "6.2.0",
+    "uniqid": "5.0.3",
+    "zenaton": "^0.7.0"
+  }
+}
